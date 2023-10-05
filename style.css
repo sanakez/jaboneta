@@ -1,0 +1,121 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, address {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Sans-serif font for a clean look */
+    background-color: #292b2c; /* Dark background */
+    color: #f2f2f2; /* Light text color */
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #222; /* Dark header background */
+    color: #f2f2f2; /* Light text color */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Content navigation menu */
+.content-navigation {
+    background-color: #222; /* Dark background for navigation */
+    text-align: center;
+    padding: 10px 0; /* Add padding to top and bottom */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style navigation links */
+.content-navigation a {
+    text-decoration: none;
+    color: #f2f2f2; /* Light text color for links */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #444; /* Dark menu item background */
+    margin: 5px; /* Add space between navigation items */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.content-navigation a:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Content boxes */
+.content {
+    background-color: #222; /* Dark background for content boxes */
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto; /* Center content horizontally */
+    margin-bottom: 20px; /* Add space between content sections */
+    box-sizing: border-box;
+}
+
+/* Modern fonts and colors */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2; /* Light text color for headers */
+}
+
+p {
+    font-size: 1.2rem; /* Larger text size */
+    color: #ddd; /* Lighter text color */
+    margin-bottom: 15px; /* Increased margin */
+}
+
+ul {
+    list-style-type: disc; /* Use bullet points for lists */
+    margin-left: 20px; /* Add indentation to lists */
+}
+
+/* Personal Profile section */
+.content#personal-profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content#personal-profile ul li {
+    font-size: 1.2rem; /* Larger text size for personal profile */
+    margin-bottom: 10px;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 768px) {
+    /* Center navigation items vertically for smaller screens */
+    .content-navigation .row {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    /* Style navigation links as buttons for smaller screens */
+    .content-navigation a {
+        margin: 5px auto; /* Center navigation items horizontally */
+        display: inline-block; /* Make the links block-level for centering */
+    }
+
+    /* Add space between rows for smaller screens */
+    .content-navigation .row {
+        margin-top: 5px;
+    }
+}
